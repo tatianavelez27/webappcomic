@@ -1,0 +1,28 @@
+.galeria{
+	display:flex;
+	justify-content: center;
+}
+
+.galeria div{
+	width:30%;
+}
+@keyframes fadp{
+    0%{background:red;}
+	20%{background:blue;}
+	40%{background:yellow;}
+	60%{background:aqua;}
+	100%{background:pink;}
+}
+@media screen and (max-width:400px){
+    body{
+	    animation: fadp alternate 10s infinite;
+    }
+    .galeria{
+        flex-direction: column;
+    	text-align: center;
+    }
+    .galeria div{
+    	margin-top:1em;
+    	width:90%;
+    }
+}
